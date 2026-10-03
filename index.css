@@ -1,0 +1,150 @@
+/* Base & Global Styles -- condensed with gemini */
+body {
+    margin: 0;
+}
+
+button {
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2B3A67;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+}
+
+/* Shared Layout Containers */
+.container,
+#header-img,
+#content,
+.menu-item,
+.cart-sheet,
+.individual-item,
+.order {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Header */
+#header-img {
+    height: 167px;
+    background-image: url('/header.png');
+}
+
+/* Menu Items */
+.menu-item {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d7dbd8;
+}
+
+.menu-left-container {
+    display: flex;
+    width: 300px;
+    gap: 36px;
+    align-items: stretch;
+    line-height: 13px;
+}
+
+.emoji-container {
+    font-size: 50px;
+}
+
+.menu-item button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
+}
+
+/* Cart Sheet & Order */
+.cart-sheet {
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+}
+
+.individual-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #f2f1ed;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+}
+
+.item-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    gap: 36px;
+}
+
+.item-row button {
+    background: none;
+    color: gray;
+}
+
+.order {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.order button {
+    width: 100%;
+    height: 60px;
+}
+
+.order-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Checkout Dialog & Form */
+#checkout-dialogue {
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+}
+
+#checkout-dialogue::backdrop {
+    background-color: rgba(0, 0, 0, 0.5) !important; 
+    backdrop-filter: blur(2px);
+}
+
+#checkout-form {
+    width: 524px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#checkout-form input {
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Success Message */
+#order-complete {
+    padding: 10px 0;
+    background-color: #B7C2E1;
+    text-align: center;
+    border-radius: 10px;
+}
